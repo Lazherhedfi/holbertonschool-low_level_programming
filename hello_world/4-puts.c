@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Write a C program that prints 
+ * main - Write a C program that prints
  *
  * Return: 0
  */
