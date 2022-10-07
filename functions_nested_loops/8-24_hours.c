@@ -1,44 +1,27 @@
-#include <stdlib.h>
 #include"main.h"
 /**
- * times_table - time table
+ * jack_bauer - 24 hours
  * Return: 0
  */
-void times_table(void)
+void jack_bauer(void)
+{
 
-{
-int i, j, k, h, e;
+int a, j, k, h, l, m;
 
-for (i = 0; i < 10; i++)
+for (a = 0; a < 24; a++)
 {
-for (j = 0; j < 10; j++)
+l = a / 10;
+m = a % 10;
+for (j = 0; j < 60; j++)
 {
-k = i * j;
-h = k / 10;
-e = k % 10;
-if (j == 0)
-{
-_putchar('0');
-}
-else if (k < 10)
-{
-_putchar(' ');
-_putchar('0' + e);
-}
-else
-{
-_putchar('0' + h);
-_putchar('0' + e);
-}
-if (j < 9)
-{
-_putchar(',');
-_putchar(' ');
-}
-else
-{
+k = j / 10;
+h = j % 10;
+_putchar(l + '0');
+_putchar(m + '0');
+_putchar(':');
+_putchar(k + '0');
+_putchar(h + '0');
 _putchar('\n');
-}
 }
 }
 }
