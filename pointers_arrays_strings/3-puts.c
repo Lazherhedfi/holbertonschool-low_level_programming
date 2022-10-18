@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _puts - function with one argument
  * @str: one char type argument
@@ -10,7 +9,7 @@ void _puts(char *str)
 {
 	while (*str)
 	{
-		_putchar(*str);
+		putchar(*str);
 		str++;
 	}
 	_putchar('\n');
